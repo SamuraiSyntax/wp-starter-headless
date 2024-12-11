@@ -2,6 +2,10 @@
 
 namespace WP_Headless\Core;
 
+use WP_Headless\API\REST_Controller;
+use WP_Headless\API\Endpoints\Posts;
+use WP_Headless\API\Endpoints\Preview;
+
 class Init
 {
   public function __construct()

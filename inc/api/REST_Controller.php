@@ -2,7 +2,7 @@
 
 namespace WP_Headless\API;
 
-class REST_Controller
+abstract class REST_Controller
 {
   private $namespace = 'wp-headless/v1';
 
