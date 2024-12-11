@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+vendor/
+.env
+.env.*
+!.env.example
+
+# Build files
+.next/
+out/
+build/
+dist/
+
+# Cache
+.cache/
+.php-cs-fixer.cache
+.phpcs.cache
+
+# Editor
+.idea/
+.vscode/
+*.sublime-*
+*.swp
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# WordPress specific
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+wp-content/cache/
+wp-content/backups/
+
+# Testing
+coverage/
+.nyc_output/
+phpunit.xml

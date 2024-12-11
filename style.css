@@ -1,0 +1,45 @@
+/*
+Theme Name: WP Starter Headless
+Theme URI: https://votre-site.com/wp-starter-headless
+Author: Votre Nom
+Author URI: https://votre-site.com
+Description: Un thème WordPress headless optimisé pour Next.js avec API REST personnalisée, authentification JWT et preview en temps réel
+Version: 1.0.0
+Requires at least: 5.0
+Tested up to: 6.7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-starter-headless
+Domain Path: /languages
+*/
+
+/* 
+Ce thème est conçu pour être utilisé en mode headless.
+Les styles principaux seront gérés par l'application frontend Next.js.
+*/
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.site-main {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  color: #1a1a1a;
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  color: #666;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
