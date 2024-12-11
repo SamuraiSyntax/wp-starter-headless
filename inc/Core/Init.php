@@ -2,35 +2,20 @@
 
 namespace WP_Headless\Core;
 
-use WP_Headless\API\REST_Controller;
-use WP_Headless\API\Endpoints\Posts;
-use WP_Headless\API\Endpoints\Preview;
+use WP_Headless\Api\REST_Controller; // Changé de API à Api
+use WP_Headless\Api\Endpoints\Posts;
+use WP_Headless\Api\Endpoints\Preview;
 
 class Init
 {
   public function __construct()
   {
-    // Initialize components
-    new \WP_Headless\API\REST_Controller();
-    new \WP_Headless\Admin\Settings();
-    new \WP_Headless\SEO\Manager();
-
-    // Actions
-    add_action('init', [$this, 'init_theme']);
-    add_action('after_setup_theme', [$this, 'setup_theme']);
+    $this->init_classes();
   }
 
-  public function init_theme()
+  private function init_classes()
   {
-    // Theme initialization
-  }
-
-  public function setup_theme()
-  {
-    // Theme setup
-    add_theme_support('post-thumbnails');
-    add_theme_support('title-tag');
+    new Posts();
+    new Preview();
   }
 }
-
-new Init();
